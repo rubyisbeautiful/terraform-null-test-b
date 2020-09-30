@@ -6,3 +6,7 @@ module "test-a" {
   source  = "app.terraform.io/sabre-test/test-a/null"
   version = "0.0.0"
 }
+
+output "id" {
+  value = module.test-a.stamp
+}
